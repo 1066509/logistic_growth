@@ -25,7 +25,7 @@ I then plotted the log-transformed data to observe the linear relationship betwe
 These plots can be found in the 'plot_data.R' file within this repository. The versions of the packages which I have used are listed in the 'package-versions.txt' file in the repository.
 <br>
 
-I then fitted a linear model to the data, to estimate the model parameters using a linear approximation. 
+I then fitted a linear model to the data, to estimate the model's parameters using a linear approximation. 
 
 
 ## Results
