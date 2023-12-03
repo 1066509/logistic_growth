@@ -4,7 +4,7 @@ This is a repository containing the code to simulate the growth of an isolate of
 I am looking to estimate the initial population size of the bacterial population, rate of growth and the carrying capacity from experimental data.
 <br>
 
-The experimental data used to simulate this growth comes from the 'experiment1.csv' file, downloaded from the **Logistic growth data** project on Open Science Framework's website.
+The experimental data used to simulate this growth comes from the 'experiment1.csv' file, downloaded from the **Logistic growth data** project on Open Science Framework's website (contributor Jose Gabriel Nino Barreat).
 
 
 ## Hypotheses
@@ -18,7 +18,9 @@ As the population continues to grow, the resources will be depleted and the wast
 
 
 ## Methods
-I initially plotted the data from the 'experiment1.csv' file using the package ggplot2 to observe the shape of the graph, and then plotted a log-transformed graph of this data to see it presented linearly. This can be found in the 'plot_data.R' file within this repository. The versions of the packages which I have used are listed in the 
+I initially plotted the data from the 'experiment1.csv' file using the package ggplot2 to observe the shape of the graph,
+
+and then plotted a log-transformed graph of this data to see the linear relationship. This can be found in the 'plot_data.R' file within this repository. The versions of the packages which I have used are listed in the 
 
 ## Results
 
