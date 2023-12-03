@@ -17,19 +17,19 @@ summary(model1)
 
 #This is a model being applied to the exponential part of the graph, which is why we want to choose a small value of t.
 #Intercept = 6.883 and gradient 0.001004. The intercept of this model is N0 (initial pop size) and gradient is r (rate of change in population size).
-#This is just a model to find the intercept and gradient of the log graph. We can use these values for plotting the data in plot_data_and_model.
+#This is a model to find the intercept and gradient of the log graph. We can use these values for plotting the data in plot_data_and_model.
 
 #Case 2. N(t) = K
 
 data_subset2 <- growth_data %>% filter(t>3180) 
 #Choose a t where the data has already reached carrying capacity. 
-#Choose a number about halfway into the numbers which have the final carrying capacity number as the population size at that time.
+#Choose a number for t about halfway into the time where we have the final carrying capacity.
 
 model2 <- lm(N ~ 1, data_subset2) 
 #We don't need a slope, we need an intercept. This will be a horizontal line, so we don't input an x axis, we just make it 1.
 summary(model2)
 
-#This is just a model to find what the intercept at the carrying capacity is. Ie. what the carrying capacity is.
+#This is a model to find what the intercept at the carrying capacity is. Ie. what the carrying capacity is.
 #Carrying capacity is around 60,000,000,000 (shown in the (Intercept) section of the outputted model)
 
 

@@ -10,11 +10,11 @@ logistic_fun <- function(t) {
   
 }
 
-N0 <- 879 #Got this number from the Excel spreadsheet. Note: not from model1 intercept because this would be the intercept if the graph was linear and didn't curve when at the low y axis values
+N0 <- 7 #This number is from the intercept of model1
   
-r <- 0.001004 #Got this number from gradient of model1
+r <- 0.001004 #This number is from gradient of model1
   
-K <- 60000000000 #Got this number from the intercept of model2
+K <- 60000000000 #This number is from the intercept of model2
 
 ggplot(aes(t,N), data = growth_data) +
   
@@ -25,6 +25,9 @@ ggplot(aes(t,N), data = growth_data) +
   #scale_y_continuous(trans='log10')
 
 
-sink(file = "package-versions.txt")
-sessionInfo()
-sink()
+
+#Code to record the packages used in these files:
+
+#sink(file = "package-versions.txt")
+#sessionInfo()
+#sink()

@@ -17,7 +17,6 @@ ggplot(aes(t,N), data = growth_data) +
 #Added in data as our dataset 'growth_data'.
 
 
-
 ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
@@ -28,4 +27,3 @@ ggplot(aes(t,N), data = growth_data) +
   
   scale_y_continuous(trans='log10')
 #Added in the y axis as 'N'.  This code will make a log graph of the graph above.
-
