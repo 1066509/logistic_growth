@@ -47,15 +47,10 @@ From the models I have run, I found the following estimated values:
 
 N0 = 7
 <br>
-r = 0.001004
+r = 0.01004
 <br>
 K = 60,000,000,000
 <br>
-
-
-
-
-
 
 
 
