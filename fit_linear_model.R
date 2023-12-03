@@ -16,7 +16,7 @@ model1 <- lm(N_log ~ t, data_subset1) #The bracket part of the code is asking R 
 summary(model1)
 
 #This is a model being applied to the exponential part of the graph, which is why we want to choose a small value of t.
-#Intercept = 6.883 and gradient 0.001004. The intercept of this model is N0 (initial pop size) and gradient is r (rate of change in population size).
+#Intercept = 6.883 and gradient 0.01004. The intercept of this model is N0 (initial pop size) and gradient is r (rate of change in population size).
 #This is a model to find the intercept and gradient of the log graph. We can use these values for plotting the data in plot_data_and_model.
 
 #Case 2. N(t) = K
