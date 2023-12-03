@@ -54,3 +54,20 @@ K = 60,000,000,000
 
 
 
+
+## Comparing the exponential and logistic models for population size at t = 4980 
+
+I have used code to calculate the population size at time t = 4980, with estimates of the N0 and r values, assuming the population grows exponentially. This code can be viewed in the 'calculate_exponential_growth_Q2.R' file.
+<br>
+Value ouput: N = 3.626392e+22
+<br>
+
+I was then able to compare this to the population size predicted under logistic growth. This is the carrying capacity value.
+<br>
+Value output: N = 6e+10.
+<br>
+When we have exponential growth, we find that population sizes are able to reach much higher numbers, and are not limited by resource availability or the build up of waste products, as in a logistic growth model.
+
+
+
+
