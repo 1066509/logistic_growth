@@ -15,7 +15,8 @@ ggplot(aes(t,N), data = growth_data) +
   
   theme_bw()
 
-#Added in data as our dataset 'growth_data'. Click on Plots in bottom right hand corner section (next to Files) to see plot.
+#Added in data as our dataset 'growth_data'.
+
 
 
 ggplot(aes(t,N), data = growth_data) + 
