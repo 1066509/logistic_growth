@@ -1,7 +1,7 @@
 # Logistic growth simulation of an *Escherichia coli*
 This is a repository containing the code to simulate the growth of an isolate of the bacterium *Escherichia coli* in a test tube containing 1ml of growth medium.
 <br>
-I am looking to estimate the initial population size of the bacterial population, rate of growth and the carrying capacity from experimental data.
+I am looking to estimate the initial population size of the bacterial population (N0), rate of growth (r) and the carrying capacity (K) from experimental data.
 <br>
 
 The experimental data used to simulate this growth comes from the 'experiment1.csv' file, downloaded from the **Logistic growth data** project on Open Science Framework's website (contributor Jose Gabriel Nino Barreat).
@@ -20,15 +20,31 @@ As the population continues to grow, the resources will be depleted and the wast
 ## Methods
 I initially plotted the logistic growth curve from the 'experiment1.csv' file using the package ggplot2 to observe the behaviour of the graph.
 <br>
-I then plotted the log-transformed data to observe the linear relationship between time and population size. 
+I then plotted the log-transformed data to observe a linear relationship between population size and time. 
 <br>
 These plots can be found in the 'plot_data.R' file within this repository. The versions of the packages which I have used are listed in the 'package-versions.txt' file in the repository.
 <br>
 
-I then fitted a linear model to the data, to estimate the model's parameters using a linear approximation. 
+I then fitted a linear model to the log-transformed data, to estimate the model's parameters using a linear approximation. Firstly, I have created code to output the values for N0 and r, using a value for t which is within the exponential growth section of the graph.
+<br>
+I have then created code to output the carrying capacity value, using a t value where the graph has reached carrying capacity.
+<br>
+This code can be found in the 'fit_linear_model.R' file within this repository.
+<br>
+
+Finally, I have plotted the data and the logistic model, containing the approximations of initial population size, growth rate and carrying capacity.
 
 
 ## Results
+From the models I have run, I found the following estimated values:
+<br>
+
+N0 = 7
+r = 0.001004
+K = 60,000,000,000
+<br>
+
+
 
 
 
