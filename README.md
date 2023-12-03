@@ -66,6 +66,7 @@ I was then able to compare this to the population size predicted under logistic 
 <br>
 Value output: N = 6e+10.
 <br>
+
 When we have exponential growth, we find that population sizes are able to reach much higher numbers, and are not limited by resource availability or the build up of waste products, as in a logistic growth model.
 
 
