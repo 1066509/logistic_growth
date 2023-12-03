@@ -2,8 +2,8 @@
 This is a repository containing the code to simulate the growth of an isolate of the bacterium *Escherichia coli* in a test tube containing 1ml of growth medium.
 <br>
 I am looking to estimate the initial population size of the bacterial population, rate of growth and the carrying capacity from experimental data.
-
 <br>
+
 The experimental data used to simulate this growth comes from the 'experiment1.csv' file, downloaded from the **Logistic growth data** project on Open Science Framework's website.
 
 
