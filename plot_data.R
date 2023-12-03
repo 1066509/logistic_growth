@@ -5,7 +5,7 @@ growth_data <- read.csv("/cloud/project/experiment1.csv")
 #install.packages("ggplot2")
 library(ggplot2)
 
-ggplot(aes(t,N), data = growth_data) + #Added in data as our dataset 'growth_data'. Click on Plots in bottom right hand corner section (next to Files) to see plot.
+ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
   
@@ -15,7 +15,10 @@ ggplot(aes(t,N), data = growth_data) + #Added in data as our dataset 'growth_dat
   
   theme_bw()
 
-ggplot(aes(t,N), data = growth_data) + #Added in the y axis as 'N'.  This code will make a log graph of the graph above.
+#Added in data as our dataset 'growth_data'. Click on Plots in bottom right hand corner section (next to Files) to see plot.
+
+
+ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
   
@@ -25,5 +28,5 @@ ggplot(aes(t,N), data = growth_data) + #Added in the y axis as 'N'.  This code w
   
   scale_y_continuous(trans='log10')
 
-
+#Added in the y axis as 'N'.  This code will make a log graph of the graph above.
 
