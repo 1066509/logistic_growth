@@ -83,7 +83,7 @@ Since the model of exponential growth reaches much higher population numbers ove
 
 The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository and the graph itself can be found here:
 
-  <p>
+  <p align="center">
      <img src="https://github.com/amccarthykerrigan/reproducible-research_homework/blob/a1129be13c0f0e252e451d4c1705e2e07f9e94b1/Q4d_Latest_commit_2.png">
   </p> 
 
