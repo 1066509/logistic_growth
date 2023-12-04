@@ -1,5 +1,5 @@
 # Logistic growth simulation of an *Escherichia coli*
-This is a repository containing the code to simulate the growth of an isolate of the bacterium *Escherichia coli* in a test tube containing 1ml of growth medium.
+This is a repository containing the code to simulate the growth of an isolate of the bacterium *Escherichia coli* (*E. coli*) in a test tube containing 1ml of growth medium.
 <br>
 I am looking to estimate the initial population size of the bacterial population (N0), rate of growth (r) and the carrying capacity (K) from experimental data.
 <br>
@@ -47,10 +47,13 @@ From the models I have run, I found the following estimated values:
 
 N0 = 7
 <br>
+This value for N0 I have estimated as 7, after rounding it up from 6.883.
+<br>
 r = 0.01004
 <br>
 K = 60,000,000,000
 <br>
+
 
 
 
@@ -62,13 +65,20 @@ I have used code to calculate the population size at time t = 4980, with estimat
 Value ouput: N = 3.626392e+22
 <br>
 
-I was then able to compare this to the population size predicted under logistic growth. This is the carrying capacity value.
+I was then able to compare this to the population size predicted under logistic growth. This is output as the carrying capacity value.
 <br>
 Value output: N = 6e+10.
 <br>
 
-When we have exponential growth, we find that population sizes are able to reach much higher numbers, and are not limited by resource availability or the build up of waste products, as in a logistic growth model.
+When we have exponential growth, we find that population sizes are able to reach much higher numbers, and are not limited by resource availability or the build up of waste products, as in a logistic growth model. Therefore, this is why we see the much higher population size under an exponential growth curve compared with a logistic growth curve.
 
+
+
+## Graphs comparing the exponential growth and logistic growth of the *E. coli* population
+
+I have  plotted these exponential and logistic growth curves together on a singular graph, but have also plotted them separately to see the graph shapes over a set period of time (0 - 4980 minutes). 
+<br>
+Since the model of exponential growth reaches much higher population numbers over the same period of time, we are unable to see the shape formed by the logistic growth curve when they are plotted together. The separate graphs allow clearer visualisation of the patterns.
 
 
 
