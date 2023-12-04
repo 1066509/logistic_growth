@@ -81,4 +81,7 @@ I have  plotted these exponential and logistic growth curves together on a singu
 Since the model of exponential growth reaches much higher population numbers over the same period of time, we are unable to see the shape formed by the logistic growth curve when they are plotted together. The separate graphs allow clearer visualisation of the patterns.
 
 
+The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository and the graph itself can be found as this file:
+
+https://github.com/amccarthykerrigan/logistic_growth/blob/3b26c62ca2202256b650d0a79b7335a66e1f5ae7/Logistic_and_exponential_growth_graphs.png
 
