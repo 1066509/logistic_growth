@@ -38,10 +38,8 @@ exponential_plot <- ggplot(aes(x = t, y = exponential_growth(t)),
   labs(x = "Time (mins)", y = "Population Size", title = "Exponential Growth") +
   ylim(0,4e+22) +
   theme_minimal() +
-  theme(
-    axis.title.x = element_text(size = 12),
-    axis.title.y = element_text(size = 12)
-  )
+  theme(axis.title.x = element_text(size = 12),
+        axis.title.y = element_text(size = 12))
 exponential_plot
 
 
@@ -51,10 +49,8 @@ logistic_plot <- ggplot(aes(x = t, y = logistic_growth(t)),
   geom_line(color = "red", linetype = "solid", size = 1, alpha = 0.8) +
   labs(x = "Time (mins)", y = "Population Size", title = "Logistic Growth") +
   theme_minimal() +
-  theme(
-    axis.title.x = element_text(size = 12),
-    axis.title.y = element_text(size = 12)
-  )
+  theme(axis.title.x = element_text(size = 12),
+        axis.title.y = element_text(size = 12))
 logistic_plot
 
 
@@ -67,10 +63,8 @@ combined_plot <- ggplot(aes(x = t), data = growth_data) +
   labs(x = "Time (mins)", y = "Population Size", title = "Logistic vs Exponential Growth") +
   ylim(0,4e+22) +
   theme_minimal() +
-  theme(
-    axis.title.x = element_text(size = 12),
-    axis.title.y = element_text(size = 12)
-  )
+  theme(axis.title.x = element_text(size = 12),
+        axis.title.y = element_text(size = 12))
 combined_plot
 
 
