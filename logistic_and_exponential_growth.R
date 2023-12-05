@@ -60,7 +60,7 @@ combined_plot <- ggplot(aes(x = t), data = growth_data) +
             colour = "red", size = 1) +
   geom_point(aes(y = exponential_growth(t)),
             colour = "blue", size = 1) +
-  labs(x = "Time (mins)", y = "log10 [Population Size]", title = "Logistic vs Exponential Growth") +
+  labs(x = "Time (mins)", y = "Population Size (log10 scale)", title = "Logistic vs Exponential Growth") +
   ylim(0,4e+22) +
   scale_y_continuous(trans = 'log10') +
   theme_bw() +
