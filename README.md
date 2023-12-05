@@ -85,7 +85,7 @@ When we have exponential growth, we find that population sizes are able to reach
 The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository and the graph itself can be found here:
 
   <p align="center">
-     <img src="https://github.com/amccarthykerrigan/logistic_growth/blob/3c32585bbc4225504678c7276523581f4ed27958/logistic_vs_exponential_graphs.jpeg">
+     <img src="https://github.com/amccarthykerrigan/logistic_growth/blob/eae22840c2ca41bd69f241428698e76a03b19e22/logistic_and_exponential_growth_graphs.jpeg">
   </p> 
 
 
