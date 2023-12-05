@@ -10,7 +10,6 @@ The versions of the packages which I have used for each file are listed in the '
 
 ## Hypotheses
 ### For the given data set
-<br>
 We expect that the bacteria will initially enter a lag phase, where the population will be adjusting to the environment of the growth medium. During this phase, there will be cellular activity, but we do not expect large changes in population size, and the non-transformed graph will likely appear flat during this timeframe.
 
 We then expect to see an exponential increase in population size, as the bacteria divide via binary fission, with the population doubling in size after each period of generation.
@@ -18,7 +17,6 @@ We then expect to see an exponential increase in population size, as the bacteri
 As the population continues to grow, the resources will be depleted and the waste products will build up in the population. This is a closed system, which means that the resources are not being replenished, and therefore we will not see exponential growth continued for an infinite time period. The resources will begin to become scarce, and at this point, we expect the growth rate of the population to decline. Eventually the population size will remain constant, entering the stationary growth phase, where the number of cells dividing and number of cells dying occur at the same rate. This is the carrying capacity of the bacterial population.
 
 ### For the simulated exponential growth
-<br>
 Under a simulated exponential population growth, we do not expect to see this same pattern. This would be seen in a bacterial system not limited by resources and not constrained by a build up of waste products. The bacterial population will see the same initial lag phase, but following this we see an extended period of growth, with no limiting carrying capacity.
 
 ## Methods
@@ -43,10 +41,14 @@ This code can be found in the 'fit_linear_model.R' file within this repository.
 Finally, I have plotted the data set again, with the linear model as a function on the graph. This allows me to visualise the linear model's parameter estimations alongside the actual data points. This plot can be found in the 'plot_data_and_model.R' file in the repository.
 
 ### Simulating and comparing exponential growth and logistic growth
-I have created an exponential growth function and logistic growth function, and used them to simulate the bacterial population size at t=4980 under each condition, using the parameters estimated from the linear model applied above. This code can be viewed in the 'calculate_exponential_growth_Q2.R' file.
+**Calculations with the exponential and logistic growth functions**
 <br>
-I have then plotted the exponential and logistic growth curves. I have plotted them together on a singular graph, but have also plotted them separately to see the graph shapes over a set period of time (0 - 4980 minutes). The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository.
-Since the model of exponential growth reaches much higher population numbers over the same period of time, we are unable to see the shape formed by the logistic growth curve when they are plotted together. The separate graphs allow clearer visualisation of the patterns.
+I have created an exponential growth function and logistic growth function, and used them to simulate the bacterial population size at t=4980 under each condition, using the parameters estimated from the linear model applied above. This code can be viewed in the 'calculate_exponential_growth_Q2.R' file.
+
+**Plotting the exponential and logistic growth curves**
+<br>
+I have then plotted the exponential and logistic growth curves. I have plotted them together on a singular graph, but have also plotted them separately to see the non-transformed graph shapes over a set period of time (0 - 4980 minutes). The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository.
+Since the model of exponential growth reaches much higher population numbers over the same period of time, we are unable to see the shape formed by the non-transformed logistic growth curve when they are plotted together. The separate graphs allow clearer visualisation of the non-transformed patterns, and the graph with both curves allows visualised of the patterns together, when the y-scale (population size variable) has been log-transformed.
 
 
 ## Results
@@ -81,7 +83,7 @@ When we have exponential growth, we find that population sizes are able to reach
 The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository and the graph itself can be found here:
 
   <p align="center">
-     <img src="https://github.com/amccarthykerrigan/logistic_growth/blob/d73a297468b3a8ef6cc2e93ad18117cff3c95615/Logistic_and_exponential_growth_graphs.png">
+     <img src="https://github.com/amccarthykerrigan/logistic_growth/blob/ad321eca53ebfcb0736d345ebeb5cde270c5ec47/logistic_and_exponential_graphs.png">
   </p> 
 
 
