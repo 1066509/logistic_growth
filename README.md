@@ -9,7 +9,7 @@ The versions of the packages which I have used for each file are listed in the '
 
 
 ## Hypotheses
-**For the given data set**
+### For the given data set
 <br>
 We expect that the bacteria will initially enter a lag phase, where the population will be adjusting to the environment of the growth medium. During this phase, there will be cellular activity, but we do not expect large changes in population size, and the non-transformed graph will likely appear flat during this timeframe.
 
@@ -17,7 +17,7 @@ We then expect to see an exponential increase in population size, as the bacteri
 
 As the population continues to grow, the resources will be depleted and the waste products will build up in the population. This is a closed system, which means that the resources are not being replenished, and therefore we will not see exponential growth continued for an infinite time period. The resources will begin to become scarce, and at this point, we expect the growth rate of the population to decline. Eventually the population size will remain constant, entering the stationary growth phase, where the number of cells dividing and number of cells dying occur at the same rate. This is the carrying capacity of the bacterial population.
 
-**For the simulated exponential growth**
+### For the simulated exponential growth
 <br>
 Under a simulated exponential population growth, we do not expect to see this same pattern. This would be seen in a bacterial system not limited by resources and not constrained by a build up of waste products. The bacterial population will see the same initial lag phase, but following this we see an extended period of growth, with no limiting carrying capacity.
 
