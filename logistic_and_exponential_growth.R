@@ -34,10 +34,10 @@ growth_data <- read.csv("/cloud/project/experiment1.csv")
 #Create exponential growth curve
 exponential_plot <- ggplot(aes(x = t, y = exponential_growth(t)),
                            data = growth_data) +
-  geom_line(color = "blue", linetype = "solid", size = 1, alpha = 0.8) +
+  geom_point(colour = "blue", size = 1) +
   labs(x = "Time (mins)", y = "Population Size", title = "Exponential Growth") +
   ylim(0,4e+22) +
-  theme_minimal() +
+  theme_bw() +
   theme(axis.title.x = element_text(size = 12),
         axis.title.y = element_text(size = 12))
 exponential_plot
@@ -46,9 +46,9 @@ exponential_plot
 #Create logistic growth curve
 logistic_plot <- ggplot(aes(x = t, y = logistic_growth(t)),
                         data = growth_data) +
-  geom_line(color = "red", linetype = "solid", size = 1, alpha = 0.8) +
+  geom_point(colour = "red", size = 1) +
   labs(x = "Time (mins)", y = "Population Size", title = "Logistic Growth") +
-  theme_minimal() +
+  theme_bw() +
   theme(axis.title.x = element_text(size = 12),
         axis.title.y = element_text(size = 12))
 logistic_plot
@@ -56,17 +56,19 @@ logistic_plot
 
 #Combine them into one graph
 combined_plot <- ggplot(aes(x = t), data = growth_data) +
-  geom_line(aes(y = logistic_growth(t)),
-            color = "red", linetype = "solid", size = 1, alpha = 0.8) +
-  geom_line(aes(y = exponential_growth(t)),
-            color = "blue", linetype = "solid", size = 1, alpha = 0.8) +
+  geom_point(aes(y = logistic_growth(t)),
+            colour = "red", size = 1) +
+  geom_point(aes(y = exponential_growth(t)),
+            colour = "blue", size = 1) +
   labs(x = "Time (mins)", y = "Population Size", title = "Logistic vs Exponential Growth") +
   ylim(0,4e+22) +
-  theme_minimal() +
+  scale_y_continuous(trans = 'log10') +
+  theme_bw() +
   theme(axis.title.x = element_text(size = 12),
         axis.title.y = element_text(size = 12))
 combined_plot
 
 
-#Create a grid of the three plots
+#Create a grid of the three plots. 
+#I have used a logarithmic y scale for the combined graph, to more easily visualise the patterns of each curve
 ggarrange(exponential_plot, logistic_plot, combined_plot, ncol = 2, nrow = 2)
