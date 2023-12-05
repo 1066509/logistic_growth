@@ -22,7 +22,7 @@ As the population continues to grow, the resources will be depleted and the wast
 <br>
 I initially plotted the logistic growth curve from the 'experiment1.csv' file using the package ggplot2 to observe the behaviour of the graph.
 <br>
-I then plotted the log-transformed data to observe a linear relationship between population size and time. 
+I then plotted the data on a logarithmic scale to observe a linear relationship between population size and time. 
 <br>
 These plots can be found in the 'plot_data.R' file within this repository. The versions of the packages which I have used are listed in the 'package-versions.txt' file in the repository.
 <br>
