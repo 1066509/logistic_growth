@@ -34,4 +34,4 @@ ggplot(aes(t,N), data = growth_data) +
   scale_y_continuous(trans='log10') +
   
   theme_bw()
-#Added in the y axis as 'N'.  This code will make a log graph of the graph above.
+#Added in the y axis as 'N'.  This code will plot the data on a logarithmic scale.
