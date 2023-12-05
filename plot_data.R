@@ -1,7 +1,5 @@
 #Script to plot the logistic growth data
 
-growth_data <- read.csv("/cloud/project/experiment1.csv")
-
 #Load packages
 if (!require("ggplot2", character.only = TRUE)) {
   install.packages("ggplot2")
@@ -10,15 +8,19 @@ if (!require("ggplot2", character.only = TRUE)) {
   library("ggplot2")
 }
 
+#Read in data
+growth_data <- read.csv("/cloud/project/experiment1.csv")
+
+
 
 #Plot the experiment1 data
 ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time") +
   
-  ylab("y") +
+  ylab("Population size") +
   
   theme_bw()
 
@@ -28,9 +30,9 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time") +
   
-  ylab("y") +
+  ylab("log10 [Population size]") +
   
   scale_y_continuous(trans='log10') +
   

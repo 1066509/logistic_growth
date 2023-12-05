@@ -1,12 +1,18 @@
 #Script to estimate the model parameters using a linear approximation (fitting the linear models)
 
-#install.packages("dplyr")
-library(dplyr)
-#file.choose()
+#Load packages
+if (!require("dplyr", character.only = TRUE)) {
+  install.packages("dplyr")
+  library("dplyr")
+} else {
+  library("dplyr")
+}
+
+#Read in the data
 growth_data <- read.csv("/cloud/project/experiment1.csv") #This step is getting us to paste the directory for the data file we have downloaded
 
 
-#Case 1. K >> N0, t is small
+#Modelling Case 1: K >> N0, t is small
 
 #Subsetting a portion of the log-transformed data, within the exponential part of the graph
 data_subset1 <- growth_data %>% filter(t<1000) %>% mutate(N_log = log(N)) 
@@ -21,7 +27,7 @@ summary(model1)
 
 
 
-#Case 2. N(t) = K
+#Modelling Case 2: N(t) = K
 
 #Subsetting a portion of the log-transformed data, when the graph has reached a constant point: carrying capacity (K)
 data_subset2 <- growth_data %>% filter(t>3180) 

@@ -29,6 +29,10 @@ ggplot(aes(t,N), data = growth_data) +
   
   geom_point() +
   
+  xlab("Time") +
+  
+  ylab("Population size") +
+  
   theme_bw()
 
   #scale_y_continuous(trans='log10')
