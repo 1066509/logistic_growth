@@ -44,6 +44,8 @@ Finally, I have plotted the data set again, with the linear model as a function 
 **Calculations with the exponential and logistic growth functions**
 <br>
 I have created an exponential growth function and logistic growth function, and used them to simulate the bacterial population size at t=4980 under each condition, using the parameters estimated from the linear model applied above. This code can be viewed in the 'calculate_exponential_growth_Q2.R' file.
+<br>
+This t value has been chosen because it is the time when the last data point was recorded in the data set. Therefore, it will allow us to be certain that we will be obtaining values for population size which represent the differences in the exponential and logistic growth curves - ie. we expect to obtain the carrying capacity value for the logistic growth curve and a much higher value for the exponential growth curve.
 
 **Plotting the exponential and logistic growth curves**
 <br>
@@ -89,4 +91,13 @@ The code for these growth curves can be seen in the 'logistic_and_exponential_gr
 
 
 ## Discussion
+The linear model we have created for the data set is able to estimate the initial population size, rate of growth and carrying capacity parameters. However, since this is only an estimate, we observe that the function, when plotted alongside the data set, does not exactly align with the position of the data's logistic growth curve. This estimate still creates the same overall sigmoidal shape as the data set itself, though. We expect that the linear model will not match the pattern in the data set exactly.
+
+When we simulate what the data would do if we had exponential growth, we find that the population size at t=4980 is much higher than the value for logistic growth. The logistic growth curve has reached the carrying capacity at t=4980, whereas the population under simulated exponential growth has been able to continue multiplying. This is expected because we can see the carrying capacity is reached at around t=2500 in the initial plot of the data - the data set follows a logistic growth curve. Equally, exponential growth is unrestricted by limited resources, and so we would expect growth under this simulation to reach much higher population sizes for the same initial population size and growth rate.
+
+When we plot these exponential and logistic growth curves, we can visualise this pattern. On the graph labelled 'Logistic vs Exponential Growth', we can see that the population under exponential growth surpasses the carrying capacity, which is reached at around t=2500, and we can visualise the continued population growth from this point. The population under logistic growth is constrained by the carrying capacity. 
+
+
+
+
 
