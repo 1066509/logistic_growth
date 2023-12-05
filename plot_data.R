@@ -11,6 +11,7 @@ if (!require("ggplot2", character.only = TRUE)) {
 }
 
 
+#Plot the experiment1 data
 ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
@@ -20,9 +21,9 @@ ggplot(aes(t,N), data = growth_data) +
   ylab("y") +
   
   theme_bw()
-#Added in data as our dataset 'growth_data'.
 
 
+#Plot the experiment1 data with a logarithmic scale on the y-axis. This will allow us to observe a linear relationship between x and y
 ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
@@ -34,4 +35,4 @@ ggplot(aes(t,N), data = growth_data) +
   scale_y_continuous(trans='log10') +
   
   theme_bw()
-#Added in the y axis as 'N'.  This code will plot the data on a logarithmic scale.
+
