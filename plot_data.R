@@ -1,33 +1,41 @@
 #Script to plot the logistic growth data
 
+#Load packages
+if (!require("ggplot2", character.only = TRUE)) {
+  install.packages("ggplot2")
+  library("ggplot2")
+} else {
+  library("ggplot2")
+}
+
+#Read in data
 growth_data <- read.csv("/cloud/project/experiment1.csv")
 
-#install.packages("ggplot2")
-library(ggplot2)
 
+
+#Plot the experiment1 data
 ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time") +
   
-  ylab("y") +
+  ylab("Population size") +
   
   theme_bw()
 
-#Added in data as our dataset 'growth_data'.
 
-
+#Plot the experiment1 data with a logarithmic scale on the y-axis. This will allow us to observe a linear relationship between x and y
 ggplot(aes(t,N), data = growth_data) + 
   
   geom_point() +
   
-  xlab("t") +
+  xlab("Time") +
   
-  ylab("y") +
+  ylab("Population size (log10 scale)") +
   
-  scale_y_continuous(trans='log10')
-
-#Added in the y axis as 'N'.  This code will make a log graph of the graph above.
+  scale_y_continuous(trans='log10') +
+  
+  theme_bw()
 
 
