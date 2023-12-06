@@ -66,6 +66,7 @@ This value for N0 I have estimated as 7, after rounding it up from 6.883.
 <br>
 **K = 60,000,000,000**
 
+The experimental data used comes from the 'experiment1.csv' file, downloaded from the **Logistic growth data** project on Open Science Framework's website (contributor Jose Gabriel Nino Barreat).
 
 ### Comparing the exponential and logistic models for population size at t = 4980
 Using the parameter estimates of the N0 and r values, I found the population size at t=4980 under **exponential growth**:
