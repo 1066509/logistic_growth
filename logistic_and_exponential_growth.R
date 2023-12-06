@@ -72,3 +72,10 @@ combined_plot
 #Create a grid of the three plots. 
 #I have used a logarithmic y scale for the combined graph, to more easily visualise the patterns of each curve
 ggarrange(exponential_plot, logistic_plot, combined_plot, ncol = 2, nrow = 2)
+
+
+#Code to record the packages used in these files:
+
+#sink(file = "package-versions.txt")
+#sessionInfo()
+#sink()
