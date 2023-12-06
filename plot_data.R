@@ -32,7 +32,7 @@ ggplot(aes(t,N), data = growth_data) +
   
   xlab("Time") +
   
-  ylab("log10 [Population size]") +
+  ylab("Population size (log10 scale)") +
   
   scale_y_continuous(trans='log10') +
   
