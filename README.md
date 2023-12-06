@@ -21,11 +21,19 @@ Under simulated exponential population growth, we do not expect to see this same
 
 ## Methods
 ### Initial plots
-I first plotted the data from the 'experiment1.csv' file using the package ggplot2, to observe the behaviour of the graph. This formed a logistic growth curve.
-<br>
-I then plotted the data with a logarithmic scale on the y axis, to observe the relationship between population size and time as a linear relationship. 
-<br>
-These plots can be found in the 'plot_data.R' file within this repository. 
+I first plotted the data from the 'experiment1.csv' file using the package ggplot2, to observe the behaviour of the graph. This formed a logistic growth curve. This can be seen here:
+
+  <p align="center">
+     <img src="https://github.com/1066509/logistic_growth/blob/8ffe7632233e801a613fe843581e98e485691e78/initial_plot_logisitic_growth.png">
+  </p> 
+
+I then plotted the data with a logarithmic scale on the y axis, to observe the relationship between population size and time as a linear relationship. This plot can be seen here:
+
+  <p align="center">
+     <img src="https://github.com/1066509/logistic_growth/blob/1a3a93fd8a22e1e30ecccd561d26b37f8546455f/initial_plot_log_scale_q1.png">
+  </p>
+
+The code for these plots can be found in the 'plot_data.R' file within this repository. 
 
 ### Applying and plotting a linear model
 **Applying linear model**
