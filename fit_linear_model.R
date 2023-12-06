@@ -29,7 +29,7 @@ summary(model1)
 #Back-transformation of N0
 N0_value <- exp(6.883)
 N0_value
-#Therefore, N0 = 976. This has been rounded up from 975.55.
+#Therefore, N0 = 976. This has been rounded up from 975.5486.
 
 
 #Modelling Case 2: N(t) = K
