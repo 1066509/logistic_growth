@@ -62,7 +62,6 @@ Finally, I have plotted the data set again, with the linear model as a function 
   </p>
 
 ### Q2: Comparing the exponential and logistic models for population size at t = 4980
-<br>
 I have created an exponential growth function and logistic growth function, and used them to simulate the bacterial population size at t=4980 under each condition, using the parameters estimated from the linear model applied above. This code can be viewed in the 'calculate_exponential_growth_Q2.R' file.
 <br>
 This t value has been chosen because it is the time when the last data point was recorded in the data set. Therefore, it will allow us to be certain that we will be obtaining values for population size which represent the differences in the exponential and logistic growth curves - ie. we expect to obtain the carrying capacity value for the logistic growth curve and a much higher value for the exponential growth curve.
@@ -85,11 +84,10 @@ When we have exponential growth, we find that population sizes are able to reach
 
 
 ### Q3: Graphs comparing the exponential growth and logistic growth of the *E. coli* population
-<br>
 I have then plotted the exponential and logistic growth curves. I have plotted them together on a singular graph, but have also plotted them separately to see the non-transformed graph shapes over a set period of time (0 - 4980 minutes). The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository.
 <br>
 Since the model of exponential growth reaches much higher population numbers over the same period of time, we are unable to see the shape formed by the non-transformed logistic growth curve when they are plotted together. The separate graphs allow clearer visualisation of the non-transformed patterns, and the graph with both curves allows visualisation of the patterns together, when the y-scale (population size variable) has been log-transformed.
-<br>
+
 The code for these growth curves can be seen in the 'logistic_and_exponential_growth.R' file in the repository and the graph itself can be found here:
 
   <p align="center">
