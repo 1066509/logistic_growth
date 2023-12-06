@@ -1,7 +1,7 @@
 #Script to calculate the population size at t = 4980
 
 #Parameters
-N0 <- 7
+N0 <- 976
 r <- 0.01004
 K <- 60000000000
 t <- 4980
@@ -10,7 +10,7 @@ t <- 4980
 N_exponential <- N0 * exp(r * t)
 N_exponential
 
-#The output is 3.626392e+22
+#The output is 5.06e+24.
 
 #Logistic growth at this given t
 N_logistic <- K + 0*t

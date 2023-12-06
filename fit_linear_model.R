@@ -22,9 +22,14 @@ data_subset1 <- growth_data %>% filter(t<1000) %>% mutate(N_log = log(N))
 model1 <- lm(N_log ~ t, data_subset1)
 summary(model1)
 
-#From model1 we find: Intercept = 6.883 and Slope = 0.01004. The intercept of this model is N0 (initial pop size) and slope is r (rate of change in population size).
+#From model1 we find: Intercept = 6.883 and Slope = 0.01004. 
+#The back-transformation of the intercept of this model is N0 (initial pop size) and slope is r (rate of change in population size).
 #This is a model to find the intercept and gradient of the log graph. We can use these values for plotting the relationship in plot_data_and_model.
 
+#Back-transformation of N0
+N0_value <- exp(6.883)
+N0_value
+#Therefore, N0 = 976. This has been rounded up from 975.55.
 
 
 #Modelling Case 2: N(t) = K

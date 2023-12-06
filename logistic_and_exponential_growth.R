@@ -22,7 +22,7 @@ logistic_growth <- function(t) {
 }
 
 # Parameters for both curves
-N0 <- 7
+N0 <- 976
 r <- 0.01004
 K <- 60000000000
 
@@ -36,7 +36,6 @@ exponential_plot <- ggplot(aes(x = t, y = exponential_growth(t)),
                            data = growth_data) +
   geom_point(colour = "blue", size = 1) +
   labs(x = "Time (mins)", y = "Population Size", title = "Exponential Growth") +
-  ylim(0,4e+22) +
   theme_bw() +
   theme(axis.title.x = element_text(size = 12),
         axis.title.y = element_text(size = 12))
@@ -61,7 +60,6 @@ combined_plot <- ggplot(aes(x = t), data = growth_data) +
   geom_point(aes(y = exponential_growth(t)),
             colour = "blue", size = 1) +
   labs(x = "Time (mins)", y = "Population Size\n(log10 scale)", title = "Logistic vs Exponential Growth") +
-  ylim(0,4e+22) +
   scale_y_continuous(trans = 'log10') +
   theme_bw() +
   theme(axis.title.x = element_text(size = 12),

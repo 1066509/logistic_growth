@@ -58,9 +58,9 @@ Since the model of exponential growth reaches much higher population numbers ove
 ### Linear model estimated parameters for the data set
 From the linear model I have run, I found the following estimated values:
 
-**N0 = 7**
+**N0 = 976**
 <br>
-This value for N0 I have estimated as 7, after rounding it up from 6.883.
+This value for N0 I have estimated as 976, after rounding it up from 975.5486.
 <br>
 **r = 0.01004**
 <br>
@@ -71,7 +71,7 @@ The experimental data used comes from the 'experiment1.csv' file, downloaded fro
 ### Comparing the exponential and logistic models for population size at t = 4980
 Using the parameter estimates of the N0 and r values, I found the population size at t=4980 under **exponential growth**:
 
-**N = 3.626392e+22**
+**N = 5.06e+24**
 
 
 I then compared this with the population size predicted at t=4980 under **logistic growth**:
@@ -93,7 +93,7 @@ The code for these growth curves can be seen in the 'logistic_and_exponential_gr
 
 
 ## Discussion
-The linear model we have created for the data set is able to estimate the initial population size, rate of growth and carrying capacity parameters. However, since this is only an estimate, we observe that the function, when plotted alongside the data set, does not exactly align with the position of the data's logistic growth curve. This estimate still creates the same overall sigmoidal shape as the data set itself, though. We would expect that the linear model will not match the pattern in the data set exactly, since it is only an estimation.
+The linear model we have created for the data set is able to estimate the initial population size, rate of growth and carrying capacity parameters. From the plot of this model alongside the data, we can see that this estimate creates the same overall sigmoidal shape as the data set itself and runs through the data points of the data set. Therefore, it provides a good estimate of the parameters of the data.
 
 When we simulate what the data would do if we had exponential growth, we find that the population size at t=4980 is much higher than the the population size under logistic growth. The logistic growth curve has reached the carrying capacity at t=4980, whereas the population under simulated exponential growth has been able to continue multiplying. This is expected because we can see the carrying capacity is reached at around t=2500 in the initial plot of the data - the data set follows a logistic growth curve. Equally, exponential growth is unrestricted by limited resources, and so we would expect growth under this simulation to reach much higher population sizes for the same initial population size and growth rate.
 

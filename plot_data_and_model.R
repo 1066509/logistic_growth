@@ -15,7 +15,7 @@ logistic_fun <- function(t) {
   
 }
 
-N0 <- 7 #This number is from the intercept of model1
+N0 <- 976 #This number is from the intercept of model1
   
 r <- 0.01004 #This number is from gradient of model1
   
